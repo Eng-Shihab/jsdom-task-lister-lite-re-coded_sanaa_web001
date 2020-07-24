@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         submit.addEventListener("click", function (event) {
 	    event.preventDefault();
 	    let task = document.getElementById("new-task-description").value;
-		task.value = '';
+		  task.value = '';
 	    let newElement = document.createElement('li');
         document.getElementById("tasks").appendChild(newElement);
         newElement.innerHTML = task + " <button class='btn'>X</button>";
